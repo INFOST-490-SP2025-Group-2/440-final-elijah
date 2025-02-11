@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 cd "$(dirname "$0")"
 applied_file=.applied_migrations
 if ! [[ -e $applied_file ]]; then
