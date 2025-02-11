@@ -1,6 +1,6 @@
 <html>
 <!--link to the styling-->
-<link rel="stylesheet" href="https://vande433.soisweb.uwm.edu/infost440/FinalProject/styles/css-pokemon-gameboy.css">
+<link rel="stylesheet" href="./styles/css-pokemon-gameboy.css">
 <head>
 <!--links to other necessary pages-->
 <div>
