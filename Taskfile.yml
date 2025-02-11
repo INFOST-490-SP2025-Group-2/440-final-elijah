@@ -1,0 +1,20 @@
+version: "3"
+
+tasks:
+  up:
+    desc: Run the Docker containers
+    cmds:
+      - docker compose up --build
+  down:
+    desc: Tear down docker containers and remove volumes
+    cmds:
+      - docker compose down -v
+  db:migrate:
+    desc: Run migrations in local MySQL Docker container
+    cmds:
+      # - docker compose exec db bash -c 'mysql -u root -p"$MYSQL_ROOT_PASSWORD" -e "SHOW DATABASES;"'
+      - docker compose exec db /usr/src/migrations/migrate.sh
+  db:bash:
+    desc: Run bash in db container
+    cmds:
+      - docker compose exec db bash

@@ -1,0 +1,32 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+    volumes:
+      - ./public:/var/www/html
+  db:
+    image: mysql:8.1.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: infost490_group2_db
+      MYSQL_USER: infost490_group2
+      MYSQL_PASSWORD: password
+      ENVIRONMENT: development
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./migrations:/usr/src/migrations
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root
+
+volumes:
+  db-data:
