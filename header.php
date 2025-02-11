@@ -1,7 +1,7 @@
-
+<html>
 <!--link to the styling-->
 <link rel="stylesheet" href="https://vande433.soisweb.uwm.edu/infost440/FinalProject/styles/css-pokemon-gameboy.css">
-<body>
+<head>
 <!--links to other necessary pages-->
 <div>
 	<ul class="framed buttons compact">
@@ -19,4 +19,11 @@
 ?>
 	</ul>
 </div>
-</body>
+<div>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+
+	

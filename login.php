@@ -1,4 +1,4 @@
-<?php # Script 12.12 - login.php #4
+<?php
 // This page processes the login form submission.
 // The script now stores the HTTP_USER_AGENT value for added security.
 

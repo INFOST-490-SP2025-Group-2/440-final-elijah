@@ -3,14 +3,7 @@ session_start();
 include "header.php";
 include "mysqli_connect.php";
 ?>
-<head>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--link to the styling-->
-<link rel="stylesheet" href="https://vande433.soisweb.uwm.edu/infost440/FinalProject/styles/css-pokemon-gameboy.css">
-</head>
-<body>
+
 <div class="wrapper">
 <?php if (isset($_GET["delete_id"])) {
     $delete_id = mysqli_real_escape_string($dbc, trim($_GET["delete_id"]));
@@ -148,6 +141,5 @@ if ($pages > 1) {
 }
 ?>
 </div>
-</body>
 <?php include "footer.php"; ?>
 

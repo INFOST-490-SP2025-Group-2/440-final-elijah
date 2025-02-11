@@ -4,15 +4,6 @@ include "header.php";
 include "mysqli_connect.php";
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Blog Post</title>
-    <link rel="stylesheet" href="https://vande433.soisweb.uwm.edu/infost440/FinalProject/styles/css-pokemon-gameboy.css">
-</head>
-<body>
 <div class="framed no-hd">
     <h2>Need to make an update to your Blog?</h2>
 </div>
@@ -71,8 +62,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 } ?>
-
-</body>
-</html>
 
 <?php include "footer.php"; ?>

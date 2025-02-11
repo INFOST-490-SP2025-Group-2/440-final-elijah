@@ -29,13 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <!--link to the styling-->
-    <link rel="stylesheet" href="https://vande433.soisweb.uwm.edu/infost440/FinalProject/styles/css-pokemon-gameboy.css">
-</head>
-<body>
+
     <div class="framed primary">
         <h2>Create a new Blog Post</h2>
     </div>
@@ -56,7 +50,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button type="submit" name="submit">Create the Blog Post</button>
         </div>
     </form>
-</body>
-</html>
 
 <?php include "footer.php"; ?>
